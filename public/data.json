@@ -1,0 +1,59 @@
+
+[
+   {
+      "name":"Bishop",
+      "value":10
+   },
+   {
+      "name":"Alex",
+      "value":6
+   },
+   {
+      "name":"Marry",
+      "value":20
+   },
+   {
+      "name":"Jospeh",
+      "value":40
+   },
+   {
+      "name":"Robert",
+      "value":12
+   },
+    
+    {
+      "name":"Jackson",
+      "value":20
+   },
+    
+    {
+      "name":"Cliffard",
+      "value":18
+   },
+    
+     {
+      "name":"Rudolph",
+      "value":15
+   },
+    
+      {
+      "name":"Francis",
+      "value":25
+   },
+    
+      {
+      "name":"Murata",
+      "value":8
+   },
+    
+      {
+      "name":"Edx",
+      "value":40
+   },
+    
+      {
+      "name":"Richard",
+      "value":50
+   }
+    
+]
