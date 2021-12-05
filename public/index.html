@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+    
+
+<!--Using d3 version 4-->   
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  
+  <link rel="stylesheet" href="mySPA.css">
+
+</head>
+
+<body>
+    
+    <script src="script.js"></script>  
+<!--Around 50% of the links are used as a reference-->
+<!--https://www.w3schools.com/html/html_images.asp this is used as reference to add an image on the html page-->
+ <div class="header">
+  <img src="abstract.jpg" alt="logo" />
+<!--https://www.w3schools.com/html/html_emojis.asp used as a reference to attach emojis on html page-->
+   <h1 class="text-header"><b>Data Visualization</b>&nbsp;&nbsp;<span class="emoji">&#128561;</span></h1>
+</div>
+      
+  <div class="chart"></div>
+  <!-- <p> Taken from <a href="https://codepen.io/netkuy/pen/KzPaBe">here</a> and copied over for better viewing. </p> -->
+    
+<a href="https://www.w3schools.com/" target="_blank" class="anchor">Reference:</a> 
+    
+<div class="wrapper">
+    <!--https://www.w3schools.com/tags/tag_button.asp used as a reference to create the button-->
+    <button onclick="myFunction()">Change</button>
+</div>
+    
+<div class="lists">
+    
+ <ul>
+  <li><span class="list1"><b>Data Visualization is very important becuase it is difficult to predict reults from large chunks of data.</b></span></li>
+  <li><span class="list2">Plotting the data recived from the json file using d3.js</span></li>   
+</ul>    
+    
+</div>
+   
+<div class="svg_container">
+<!--https://www.w3schools.com/html/html5_svg.asp used as a reference to create the svg elemnts and then modified as per the need-->
+<svg id="svg" height="300" width="300">
+    <rect x="10" y="40" width="200" height="120" fill="yellow" />
+    <text x="140" y="90" fill="green" font-weight="bold">Smile</text>
+    <text x="140" y="120" fill="brown" font-weight="bold">Please</text>
+    <!--svg grouping used to form of a group of the shapes-->
+    <g id="face" transform='translate(70 95)'>
+      <circle id="facecircle" cx="0" cy="0" r="50" stroke="#000000" stroke-width="2" fill="#FAD257" />
+      <circle cx="-20" cy="-10" r="5" fill="#000000" />
+      <circle cx="20" cy="-10" r="5" fill="#000000" />
+
+      <g id="smile" transform="translate(0, 25)">
+        <path id="smilepath" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"
+          d="M-20,-10 C-20,10 20,10 20,-10" />
+      </g>
+    </g>
+  </svg>
+</div>  
+    
+</body>
