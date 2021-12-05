@@ -1,0 +1,167 @@
+/*More or less. around 60% of the code sample is taken fromn the reference and then modified*/
+body {
+    margin: 0;
+    padding: 0; 
+    /*https://www.w3schools.com/css/css3_gradients.asp is used as a reference for gradient background and then modified as per the need*/
+    background: -webkit-gradient(linear, left top, left bottom, from(red), to(blue)) fixed;
+  }
+
+/*https://www.dummies.com/web-design-development/wordpress/wordpress-design/defining-and-positioning-your-header-image-with-css-in-wordpress-twenty-fifteen/ this is used as a reference to attach the image header and then modified as per the need*/
+.header img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background: #555;
+  display:block;
+  position: relative;
+}
+
+/*https://www.w3schools.com/tags/tag_header.asp used as a refernce to attach the header and then modified*/
+.header h1 {
+  position: absolute;
+  top: 10px;
+  left: 700px;
+  color: aqua;
+  font-size: 56px;
+  display: block;
+  font-style: italic;
+  font-family: cursive;
+  color: red;
+  opacity: 1;
+  /*https://www.w3schools.com/css/css3_animations.asp is used as a reference for animation and applied on the header which also consists of the emoji*/
+  animation: fade 5s linear;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+   animation:spin 5s linear infinite;
+    
+}
+
+/*The time of changes happen to the element after specified intervals of time*/
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+ .bar {
+      fill: steelblue;
+    }
+
+
+.wrapper {
+    text-align: center;
+}
+
+
+svg
+{
+    
+    position: absolute;
+
+}
+/*https://www.w3schools.com/css/css3_buttons.asp used as a reference for the button and then modiofied as per the need*/
+button {
+  background-color: #04AA6D;
+  border: 2px solid black;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 30%;
+  font-style: oblique;
+  position: absolute;
+  height: 5%;
+  font-size: 26px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  top: 63%;
+  left: 8%;
+  cursor:pointer;
+}
+
+/*https://www.w3schools.com/cssref/sel_hover.asp used as a refernece when the button is hovered over to add the color to the button*/
+
+button:hover
+{
+background-color:red;
+}
+
+/*Adding styles on the anchor tag(link)*/
+.anchor {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    top: 57%;
+    left: 5%;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: lightpink;
+}
+
+.anchor:active{
+    color: darkgoldenrod;
+}
+
+
+.lists{
+    
+    position: absolute;
+    top: 75%;
+    left: 5%;
+}
+
+ul {
+    
+    position: relative;
+    font-size: 40px;
+
+}
+
+/*Defining the list elements and adding animation on them individually*/
+.list1{
+    
+    font-style: italic;
+    color: floralwhite;
+    animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 2;
+    animation-fill-mode: backwards;
+}
+
+.list2{
+    
+    font-style: oblique;
+    color: deeppink;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+          opacity: 0;
+        }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Setting up the position of the svg conatiner*/
+.svg_container{
+    
+    position: relative;
+    left:1400px;
+}
+
