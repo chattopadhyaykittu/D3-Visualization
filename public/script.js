@@ -105,7 +105,7 @@ const margin = { top: 20, right: 20, bottom: 20, left: 105 }
       const value_text = barEnter.append("text")
         .text(d => d.value)
         .attr("text-anchor", "middle")
-        .style("font", "20px times")
+        .style("font", "26px times")
         .style("fill", "white")
         .attr("dx", BAR_WIDTH/2)
         .attr("dy", -2);
